@@ -4,7 +4,7 @@ import {readFile, writeFile} from 'fs/promises';
 import * as Mongo from "mongodb";
 
 const path = "./data.json";
-const client = new Mongo.MongoClient("mongodb+srv://ptphan:5ssW4Pj4LWwjQzzd@portfolio.gk7bxqz.mongodb.net/?retryWrites=true&w=majority");
+const client = new Mongo.MongoClient("mongodb+srv:");
 const db = "data";
 //id: {type: type, data: data}
 let elements = {};
@@ -175,6 +175,3 @@ app.get('*', async (request, response) => {
 app.listen(port, () => {
     console.log(`server started on port ${port}`);
 });
-
-//ptphan
-//5ssW4Pj4LWwjQzzd
