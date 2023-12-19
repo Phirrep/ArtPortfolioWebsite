@@ -1,0 +1,242 @@
+.showcase{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.stats{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 30px;
+}
+
+.red-heart {
+    position: relative;
+    width: 50px;
+    height: 45px;
+    margin-top: 5px;
+    left: 30px;
+}
+.red-heart::before, .red-heart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 26px;
+    height: 40px;
+    border-radius: 25px 25px 0 0;
+    background: red;
+}
+.red-heart::before {
+    left: 25px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+.red-heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.grey-heart {
+    position: relative;
+    width: 50px;
+    height: 45px;
+    margin-top: 5px;
+    left: 30px;
+} 
+.grey-heart::before, .grey-heart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 26px;
+    height: 40px;
+    border-radius: 25px 25px 0 0;
+    background: grey;
+}
+.grey-heart::before {
+    left: 25px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+.grey-heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.plus-sign {
+    position: relative;
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+}
+.plus-sign:hover{
+    background-color: grey
+}
+.plus-sign::before, .plus-sign::after {
+    content: '';
+    position: absolute;
+    background-color: #333;
+}
+.plus-sign::before {
+    width: 60%; /* Adjust the width of the horizontal line */
+    height: 20%; /* Adjust the height of the horizontal line */
+    top: 40%; /* Adjust the vertical position of the horizontal line */
+    left: 20%; /* Adjust the horizontal position of the horizontal line */
+}
+.plus-sign::after {
+    width: 20%; /* Adjust the width of the vertical line */
+    height: 60%; /* Adjust the height of the vertical line */
+    top: 20%; /* Adjust the vertical position of the vertical line */
+    left: 40%; /* Adjust the horizontal position of the vertical line */
+}
+
+.minus-sign {
+    position: relative;
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+}
+.minus-sign:hover{
+    background-color: grey
+}
+.minus-sign::before{
+    content: '';
+    position: absolute;
+    background-color: #333;
+}
+.minus-sign::before {
+    width: 60%; /* Adjust the width of the horizontal line */
+    height: 20%; /* Adjust the height of the horizontal line */
+    top: 40%; /* Adjust the vertical position of the horizontal line */
+    left: 20%; /* Adjust the horizontal position of the horizontal line */
+}
+
+.gallery{
+    text-align: center;
+    border-color: black;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+.left{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.right{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.arrow{
+    border: solid black;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+}
+.arrow-disabled{
+    border: solid grey;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+}
+.arrow:hover{
+    border-color: grey;
+}
+
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.description{
+    font-family:  'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+.comments{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    gap: 10px;
+    position: relative;
+    left: 40px;
+}
+.username{
+    font-family:  'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.commentBox{
+    height: 100px;
+    width: 350px;
+    left: 40px;
+    position: relative;
+    display: inline-block;
+    gap: 10px;
+}
+.textBox{
+    text-align: start;
+    font-family:  'Times New Roman', Times, serif;
+    font-size: 16px;
+    height: 100px;
+    width: 350px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.commentButton{
+    position: relative;
+    left: 40px;
+    font-family:  'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.editing-menu{
+    align-items: center;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    left: 100px;
+    gap: 10px;
+}
+.editing-option{
+    font-family:  'Times New Roman', Times, serif;
+    position: relative;
+    left: 100px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.editing-button{
+    position: absolute; 
+    left: 300px;
+    width: 25px;
+    height: 25px;
+}
+.sortingMenu{
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    justify-content: center;
+    margin-top: 7px;
+}
+.sortingUI{
+    font-size: 25px;
+}
+
+#showcases{
+    width: 100%;
+    left: 50px;
+    display: inline-block;
+    position: relative;
+}
+#add-showcase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:  'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    gap: 10px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Art Portfolio Website</title>
+        <script type="module" src="index.js" defer></script>
+        <link rel="stylesheet" href="style.css"></link>
+    </head>
+    <body style="background-color: #dee194">
+        <header style="font-size: 50px; font-weight: bold; text-align: center;">Art Portfolio Website</header>
+        <form class="sortingMenu">
+            <input id="showAll" class="sortingUI" type="button" value="Showall Showcases"></input>
+            <input id="checkFavorites" class="sortingUI" type="button" value="Your Favorites"></input>
+            <input id="checkComments" class="sortingUI" type="button" value="Your Comments"></input>
+            <label class="title" for="users">User: </label>
+            <select class="sortingUI" id="users">
+                <option value="admin">Admin</option>
+                <option value="guest 1">Guest 1</option>
+                <option value="guest 2">Guest 2</option>
+            </select>
+        </form>
+        <form class="sortingMenu">
+            <input id="sortFavorites" class="sortingUI" type="button" value="Sort by Favorites"></input>
+            <input id="sortComments" class="sortingUI" type="button" value="Sort by Comments"></input>
+            <select class="sortingUI" id="order">
+                <option value="desc">Descending</option>
+                <option value="asc">Ascending</option>
+            </select>
+        </form>
+        <br></br><br></br>
+        <div id="showcases"></div>
+        <div id="add-showcase">
+            <div>Add a Showcase</div>
+            <form><input id="showcase-name"></input></form>
+            <div id="new-showcase" class="plus-sign"></div>
+        </div>
+    </body>
+</html>
